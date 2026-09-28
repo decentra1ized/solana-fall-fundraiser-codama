@@ -82,6 +82,20 @@
     prettier "^3.8.1"
     semver "^7.7.3"
 
+"@codama/renderers-rust@^3.1.3":
+  version "3.1.3"
+  resolved "https://registry.yarnpkg.com/@codama/renderers-rust/-/renderers-rust-3.1.3.tgz#facd6b2d90ca7224ae38489f1c4289265502b4dc"
+  integrity sha512-z5hPKlqT/0umZOdVMZfRw03mfN/GkdZ0z646cIComcosDk4VKTO4AFr98sg1L/aO5MXfoBrTfNOqYzD1fyUotg==
+  dependencies:
+    "@codama/errors" "^1.10.0"
+    "@codama/nodes" "^1.10.0"
+    "@codama/renderers-core" "^1.3.11"
+    "@codama/visitors-core" "^1.10.0"
+    "@iarna/toml" "^2.2.5"
+    "@solana/codecs-strings" "^7.0.0"
+    nunjucks "^3.2.4"
+    semver "^7.7.3"
+
 "@codama/visitors-core@1.11.0", "@codama/visitors-core@^1.10.0":
   version "1.11.0"
   resolved "https://registry.yarnpkg.com/@codama/visitors-core/-/visitors-core-1.11.0.tgz#bce48b787d60b552bd2e50f43cd13620103d6a20"
@@ -138,6 +152,11 @@
   integrity sha512-IchNf6dN4tHoMFIn/7OE8LWZ19Y6q/67Bmf6vnGREv8RSbBVb9LPJxEcnwrcwX6ixSvaiGoomAUvu4YSxXrVgw==
   dependencies:
     "@jridgewell/trace-mapping" "0.3.9"
+
+"@iarna/toml@^2.2.5":
+  version "2.2.5"
+  resolved "https://registry.yarnpkg.com/@iarna/toml/-/toml-2.2.5.tgz#b32366c89b43c6f8cefbdefac778b9c828e3ba8c"
+  integrity sha512-trnsAYxU3xnS1gPHPyU961coFyLkh4gAD/0zQ5mymY4yOZ+CYvsPqUbOFSw0aDM4y0tV7tiFxL/1XfXPNC6IPg==
 
 "@jridgewell/resolve-uri@^3.0.3":
   version "3.1.2"
@@ -235,6 +254,13 @@
   dependencies:
     "@solana/errors" "5.5.1"
 
+"@solana/codecs-core@7.1.1":
+  version "7.1.1"
+  resolved "https://registry.yarnpkg.com/@solana/codecs-core/-/codecs-core-7.1.1.tgz#54648701425ee26d01f9f6246ef0398526957e54"
+  integrity sha512-C1UOAQ7LH8RuCTfaij6hthTZeBlpp8GuD2g9Nag/xgiNKJGvAfVrcorb+kO/sufdYI8Lu+BiVvPeKOjQDQiKqg==
+  dependencies:
+    "@solana/errors" "7.1.1"
+
 "@solana/codecs-core@8.3.0":
   version "8.3.0"
   resolved "https://registry.yarnpkg.com/@solana/codecs-core/-/codecs-core-8.3.0.tgz#d07e63a6a861b4023df83457afcf682c26b63319"
@@ -267,6 +293,14 @@
   dependencies:
     "@solana/codecs-core" "2.0.0-rc.1"
     "@solana/errors" "2.0.0-rc.1"
+
+"@solana/codecs-numbers@7.1.1":
+  version "7.1.1"
+  resolved "https://registry.yarnpkg.com/@solana/codecs-numbers/-/codecs-numbers-7.1.1.tgz#b67b625dd48d8f0db948b89411ad6928c1ea0c86"
+  integrity sha512-TWWrQq6Wp5Yf5bSc6RbxDDYCRUBBmRtRgjvUMHGp0P9K+4uFwxllRjSZFzBPHgXj3UTeZmFJdcoD271QhAgibg==
+  dependencies:
+    "@solana/codecs-core" "7.1.1"
+    "@solana/errors" "7.1.1"
 
 "@solana/codecs-numbers@8.3.0":
   version "8.3.0"
@@ -301,6 +335,15 @@
     "@solana/codecs-core" "8.3.0"
     "@solana/codecs-numbers" "8.3.0"
     "@solana/errors" "8.3.0"
+
+"@solana/codecs-strings@^7.0.0":
+  version "7.1.1"
+  resolved "https://registry.yarnpkg.com/@solana/codecs-strings/-/codecs-strings-7.1.1.tgz#1ebb7b10d33af2aabead40be5cd219141b213281"
+  integrity sha512-6qWl+atG60D2LmP47GyGapQFhVsG1sVhVrEaM3lV09vwrGOMeOZARZ4ObaQ5m6uQmM04G+f8dY9d17nCMbGHGg==
+  dependencies:
+    "@solana/codecs-core" "7.1.1"
+    "@solana/codecs-numbers" "7.1.1"
+    "@solana/errors" "7.1.1"
 
 "@solana/codecs@2.0.0-rc.1":
   version "2.0.0-rc.1"
@@ -340,6 +383,14 @@
   dependencies:
     chalk "5.6.2"
     commander "14.0.2"
+
+"@solana/errors@7.1.1":
+  version "7.1.1"
+  resolved "https://registry.yarnpkg.com/@solana/errors/-/errors-7.1.1.tgz#eafc0d6609928e080db38c0227e15fbfb2528955"
+  integrity sha512-q35qck8rBnNvJlPU00mnHEQm7gWvghzYz8khqVoLhjgodTzGp46VqnIOyI1LXOAF6XDal58bMNDO980MQgq8yw==
+  dependencies:
+    chalk "5.6.2"
+    commander "15.0.0"
 
 "@solana/errors@8.3.0":
   version "8.3.0"
@@ -887,6 +938,11 @@
   dependencies:
     "@types/node" "*"
 
+a-sync-waterfall@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/a-sync-waterfall/-/a-sync-waterfall-1.0.1.tgz#75b6b6aa72598b497a125e7a2770f14f4c8a1fa7"
+  integrity sha512-RYTOHHdWipFUliRFMCS4X2Yn2X8M87V/OpSqWzKKOGhzqyUxzyVmhHDH9sAvG+ZuQf/TAOFsLCpMw09I1ufUnA==
+
 acorn-walk@^8.1.1:
   version "8.3.5"
   resolved "https://registry.yarnpkg.com/acorn-walk/-/acorn-walk-8.3.5.tgz#8a6b8ca8fc5b34685af15dabb44118663c296496"
@@ -945,6 +1001,11 @@ argparse@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/argparse/-/argparse-2.0.1.tgz#246f50f3ca78a3240f6c997e8a9bd1eac49e4b38"
   integrity sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==
+
+asap@^2.0.3:
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/asap/-/asap-2.0.6.tgz#e50347611d7e690943208bbdafebcbc2fb866d46"
+  integrity sha512-BSHWgDSAiKs50o2Re8ppvp3seVHXSRM44cdSsT9FfNEUUZLOGWVCsiWaRPWM1Znn+mqZ1OfVZ3z3DWEzSp7hRA==
 
 assertion-error@^1.1.0:
   version "1.1.0"
@@ -1171,6 +1232,11 @@ commander@^2.20.3:
   version "2.20.3"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.20.3.tgz#fd485e84c03eb4881c20722ba48035e8531aeb33"
   integrity sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==
+
+commander@^5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-5.1.0.tgz#46abbd1652f8e059bddaef99bbdcb2ad9cf179ae"
+  integrity sha512-P0CysNDQ7rtVw4QIQtm+MRxV66vKFSvlsQvGYXZWR3qFU0jlMKHZZZgw8e+8DSah4UDKMqnknRDQz+xuQXQ/Zg==
 
 create-require@^1.1.0:
   version "1.1.1"
@@ -1637,6 +1703,15 @@ normalize-path@^3.0.0, normalize-path@~3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/normalize-path/-/normalize-path-3.0.0.tgz#0dcd69ff23a1c9b11fd0978316644a0388216a65"
   integrity sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==
+
+nunjucks@^3.2.4:
+  version "3.2.4"
+  resolved "https://registry.yarnpkg.com/nunjucks/-/nunjucks-3.2.4.tgz#f0878eef528ce7b0aa35d67cc6898635fd74649e"
+  integrity sha512-26XRV6BhkgK0VOxfbU5cQI+ICFUtMLixv1noZn1tGU38kQH5A5nmmbk/O45xdyBhD1esk47nKrY0mvQpZIhRjQ==
+  dependencies:
+    a-sync-waterfall "^1.0.0"
+    asap "^2.0.3"
+    commander "^5.1.0"
 
 object-keys@^1.1.1:
   version "1.1.1"
