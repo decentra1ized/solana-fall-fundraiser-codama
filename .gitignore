@@ -5,6 +5,8 @@ target
 node_modules
 test-ledger
 .yarn
+.surfpool
+runbooks
 
 # Codama output. Regenerate with `npx codama run js`; commit codama.json, not this.
 /clients/
